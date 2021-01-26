@@ -2,6 +2,7 @@ use serde::{Serialize, Deserialize};
 
 #[derive(Serialize, Deserialize)]
 pub struct ContentsMessage {
+    pub sender : String,
     pub recipients : Vec<String>,
     pub payload : String
 }
